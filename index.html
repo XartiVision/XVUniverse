@@ -179,38 +179,70 @@ min-height: 100vh;
     </div>
   </section>
 
-  <div class="book-links">
+ <div class="book-links">
   <a href="https://www.youtube.com/@CarlBStirling" target="_blank" class="book-btn youtube">
     YouTube
   </a>
 
-  <a href=" https://www.tiktok.com/@xartivision?_t=ZT-8yIm8FUAYGV&_r=1" target="_blank" class="book-btn tiktok">
+  <a href="https://www.tiktok.com/@xartivision?_t=ZT-8yIm8FUAYGV&_r=1" target="_blank" class="book-btn tiktok">
     TikTok
   </a>
 
   <a href="https://carlstirring.gumroad.com/l/vwszhg" target="_blank" class="book-btn gumroad">
     Buy the Book
+  </a>
+</div>
 
-    .links {
+.book-links {
   display: flex;
+  justify-content: center;
   gap: 15px;
-  margin-top: 25px;
+  margin: 40px 0;
   flex-wrap: wrap;
 }
 
-.links-btn {
-  padding: 12px 20px;
-  border-radius: 10px;
+.book-btn {
+  padding: 12px 22px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
   color: white;
   background: #222;
-  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 
-.links-btn:hover {
-  transform: scale(1.05);
-  opacity: 0.85;
+.book-btn:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(0,240,255,0.6);
+}
+
+.youtube { background: #ff0000; }
+.tiktok { background: #000000; }
+.gumroad { background: #ff90e8; color: black; }.book-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.book-btn {
+  padding: 12px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #222;
+  transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.book-btn:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(0,240,255,0.6);
 }
 
 .youtube { background: #ff0000; }
