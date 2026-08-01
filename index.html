@@ -122,6 +122,37 @@
     .tiktok  { background: #000000; }
     .gumroad { background: #ff90e8; color: black; }
 
+    /* TikTok video section */
+    .tiktok-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .tiktok-caption {
+      font-size: 1.2rem;
+      color: #ff8fe0;
+      text-align: center;
+      margin-bottom: 24px;
+      text-shadow: 0 0 12px rgba(255, 0, 170, 0.55);
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+
+    .tiktok-embed-wrapper {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 2px solid #ff00aa44;
+      box-shadow: 0 0 30px rgba(255, 0, 170, 0.4), 0 0 60px rgba(0, 240, 255, 0.2);
+      background: rgba(20, 20, 60, 0.6);
+      backdrop-filter: blur(6px);
+      max-width: 325px;
+      width: 100%;
+    }
+
     footer {
       text-align: center; padding: 30px; color: #88ccff;
       font-size: 0.9rem; border-top: 1px solid #00f0ff22; margin-top: 60px;
@@ -234,6 +265,7 @@
     <p>I originally wrote A Place in the Woods at 8, but I've finally published it, because I believe the time is now. Chosen ones have been deceived for far too long, so here's the truth &amp; answers......</p>
   </div>
 
+  <!-- YouTube Video -->
   <div style="display:flex; justify-content:center; padding:40px 20px; max-width:900px; margin:0 auto;">
     <div style="width:100%; max-width:800px; border-radius:16px; overflow:hidden; border:2px solid #00f0ff44; box-shadow:0 0 30px rgba(0,240,255,0.4), 0 0 60px rgba(255,0,170,0.2);">
       <div style="position:relative; padding-bottom:56.25%; height:0;">
@@ -248,6 +280,24 @@
       </div>
     </div>
   </div>
+
+  <!-- TikTok Video -->
+  <section class="tiktok-section">
+    <p class="tiktok-caption">A reader asked, "What is the Cup of Hiccups?"</p>
+    <div class="tiktok-embed-wrapper">
+      <blockquote
+        class="tiktok-embed"
+        cite="https://www.tiktok.com/@xartivision/video/7669119536104295711"
+        data-video-id="7669119536104295711"
+        style="max-width: 325px; min-width: 325px;">
+        <section>
+          <a target="_blank" href="https://www.tiktok.com/@xartivision">@xartivision</a>
+        </section>
+      </blockquote>
+    </div>
+  </section>
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
 
   <footer>
     <p>© 2026 Xarti-Vision Universe &nbsp;|&nbsp; <a href="mailto:xavision@proton.me">xavision@proton.me</a></p>
